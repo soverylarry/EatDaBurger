@@ -1,0 +1,32 @@
+<h1>Eat-Da-Burger!</h1>
+<form id="submitBtn">
+  <input type="text" id="new-burger" placeholder="Enter a burger you would like to eat..."></input>
+  <br><br>
+  <button type="submit" class="waves-effect waves-light btn">Submit</button>
+</form>
+<br><br>
+<div class="row">
+  <div class="col s12 m6">
+    <h2 class="title">Burgers to eat:</h2>
+    <ul>
+      {{#each burgers}}
+        {{#unless consumed}}
+          {{> eatburger}}
+        {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
+  <div class="col s12 m6">
+    <h2 class="title">Burgers eaten:</h2>
+    <ul>
+      {{#each burgers}}
+        {{#if consumed}}
+        <li>
+          {{burger_name}}
+        </li>
+        <br>
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+</div>
