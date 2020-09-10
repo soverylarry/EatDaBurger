@@ -8,7 +8,7 @@ function createQmarks(num){
     return arr.toString()
 }
 
-function translateSql(obj) {
+function translateSql(ob) {
     let arr = [];
     for (let key in ob) {
         let value = ob[key];

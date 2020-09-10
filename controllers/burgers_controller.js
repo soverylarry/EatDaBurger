@@ -1,7 +1,7 @@
 const express = require("express");
-const burger = require("../models/burger");
-
 const router = express.Router();
+
+const burger = require("../models/burger");
 
 router.get("/", function (req, res) {
     burger.selectAll(function (data) {
@@ -25,7 +25,7 @@ router.get("/", function (req, res) {
         let condition = "id = " + req.params.id;
         console.log("condition", condition);
         burger.updateOne({ devoured: req.body.devoured }, condition, function (result) {
-            if (result, changedRows === 0) {
+            if (result.changedRows === 0) {
                 return res.status(404).end();
             } else {
                 res.status(200).end();
@@ -38,7 +38,7 @@ router.get("/", function (req, res) {
         console.log("condition", condition);
 
         burger.deleteOne(condtion, function (result) {
-            if (result, changedRows === 0) {
+            if (result.changedRows === 0) {
                 return res.status(404).end();
             } else {
                 res.status(200).end();
