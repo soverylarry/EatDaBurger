@@ -40,7 +40,6 @@ $(function () {
 
         let id = $(this).data("id");
 
-        
         $.ajax({
             type: "DELETE",
             url: "/api/burgers/" + id
