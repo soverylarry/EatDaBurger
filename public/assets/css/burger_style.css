@@ -12,16 +12,21 @@
 
 
 body {
-    background-image: url("../img/Fiveguys.jpg");
-    background-repeat: no-repeat;
     
-    background-position: top;
-    background-position-x: right;
+   background-image: url("../img/checkers.jpg");
+
+    
    
     
   }
   .container {
     color: #d32424;
+    background-image: url("../img/Fiveguys.jpg"); 
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: top;
+    background-position-x: right;
   }
  
   
