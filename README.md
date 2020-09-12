@@ -9,6 +9,9 @@ Node-Express-Handlebar-MySQL app
 
 ## Project Description: EatDaBurger is a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM. You add a new burger to your own 'menu' and then you get to Eat It whenever you want!  The app connects to an MySQL/SQL database to manage the user entries. 
 
+
+### Video Demo: https://drive.google.com/file/d/1y6NDVmDefgXxjKnMS_DUMgMa2eEa3x8T/view
+
 ### Installation Requirements: NPM install; Body-Parser, Express, MySQL and Express-Handlebars
 
 ### Access on-line via Heroku: https://infinite-cove-96527.herokuapp.com/
