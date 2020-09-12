@@ -7,7 +7,7 @@ Node-Express-Handlebar-MySQL app
 # Project Title:     EatDaBurger!
 ### <img src= "https://img.shields.io/github/languages/count/soverylarry/EmployeeTracker">  <img src="https://img.shields.io/github/license/soverylarry/EmployeeTracker">
 
-## Project Description:        EmployeeTracker is a command line app that uses Node.js, mySQL and Inquirer to create, view and add to an employee database.
+## Project Description: EatDaBurger is a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM. You add a new burger to your own 'menu' and then you get to Eat It whenever you want!  The app connects to an MySQL/SQL database to manage the user entries. 
 
 ### Installation Requirements: NPM install; Body-Parser, Express, MySQL and Express-Handlebars
 
