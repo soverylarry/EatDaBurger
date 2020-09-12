@@ -15,7 +15,7 @@ Node-Express-Handlebar-MySQL app
 
 ### Usage:   (alternately: Enter 'server.js' to initiate app if you are running locally from the command line.)
 
-<img src="https://github.com/soverylarry/EatDaBurger/blob/master/public/assets/img/snapShotFiveGuys.PNG">
+<img src="https://github.com/soverylarry/EatDaBurger/blob/master/public/assets/img/LLBridgeReduced.png">
 
 ### Licenses: MIT
 ### Contributors:         Developer, tutor and TA.
