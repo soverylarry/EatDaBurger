@@ -28,7 +28,7 @@ $(function () {
         let devouredState = {
             devoured: 1
         };
-
+console.log("before ajax call")
         $.ajax("/api/burgers/" + id, {
             type: "PUT",
             data: devouredState

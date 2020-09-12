@@ -55,6 +55,7 @@ const orm = {
             if (err) {
                 throw err;
             }
+            cb(res);
             console.log("updated correctly");
         });
     },
