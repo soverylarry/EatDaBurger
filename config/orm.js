@@ -24,7 +24,7 @@ function translateSql(ob) {
 
 const orm = {
     selectAll: function (table, cb) {
-        const dbQuery = "SELECT * FROM " + table + ";";
+        let dbQuery = "SELECT * FROM " + table + ";";
 
         connection.query(dbQuery, function (err, res) {
             if (err) {
@@ -33,13 +33,13 @@ const orm = {
             cb(res);
         });
     },
-    insertOne: function (table, cols, vals, cb) {
-        const dbquery = "INSERT INTO " + table + " (" + cols.toString() + ") " + "VALUES (" + createQmarks(vals.length) + ") ";
 
-        console.log(dbquery);
-
-        connection.query(dbQuery, function (err, res) {
-            if (err) {
+    insertOne: function(table, cols, vals, cb) {
+        var dbQuery = "INSERT INTO " + table + "(" + cols.toString() + ")" + "VALUES (" + createQmarks(vals.length) + ")";
+    
+        console.log(dbQuery)
+        connection.query(dbQuery,vals, function(err, res) {
+            if (err){
                 throw err;
             }
             cb(res);
@@ -47,20 +47,20 @@ const orm = {
     },
 
     updateOne: function (table, objColVals, condition, cb) {
-        const dbQuery = "UPDATE " + table + " SET " + translateSql(objColVals) + " WHERE " + condition;
+        let dbQuery = "UPDATE " + table + " SET " + translateSql(objColVals) + " WHERE " + condition;
 
-        console.log(dbquery);
+        console.log(dbQuery);
 
         connection.query(dbQuery, function (err, res) {
             if (err) {
                 throw err;
             }
-            cb(res);
+            console.log("updated correctly");
         });
     },
 
     deleteOne: function (table, condition, cb) {
-        const dbQuery = "DELETE FROM " + table + " WHERE " + condition;
+        let dbQuery = "DELETE FROM " + table + " WHERE " + condition;
 
         console.log(dbquery);
 

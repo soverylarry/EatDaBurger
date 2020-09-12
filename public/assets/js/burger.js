@@ -1,3 +1,6 @@
+
+
+
 $(function () {
     $(".create-form").on("submit", function (event) {
         event.preventDefault();
@@ -33,16 +36,16 @@ $(function () {
             console.log("Burger devoured");
             location.reload();
         });
-    });
 
-    $(".trashburger").on("click", function (event) {
-        event.preventDefault();
+        $(".trashburger").on("click", function (event) {
+            event.preventDefault();
 
-        let id = $(this).data("id");
+            let id = $(this).data("id");
 
-        $.ajax({
-            type: "DELETE",
-            url: "/api/burgers/" + id
-        }).then(location.reload());
+            $.ajax({
+                type: "DELETE",
+                url: "/api/burgers/" + id
+            }).then(location.reload());
+        });
     });
 });

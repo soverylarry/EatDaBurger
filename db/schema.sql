@@ -9,6 +9,6 @@ CREATE TABLE burgers
 (
     id INT NOT NULL AUTO_INCREMENT,
     burger_name varchar(225) NOT NULL,
-    consumed BOOLEAN DEFAULT false,
+    devoured BOOLEAN DEFAULT false,
     PRIMARY KEY (id)
 );

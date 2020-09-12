@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const burger = require("../models/burger.js");
+const burger = require("../models/burger");
 
 router.get("/", function (req, res) {
     burger.selectAll(function (data) {
@@ -17,7 +17,7 @@ router.get("/", function (req, res) {
             ["burger_name", "devoured"],
             [req.body.burger_name, req.body.devoured],
             function (result) {
-                res.json({ id: result.insertID });
+                res.json({ id: result.insertId });
             }
         );
     });
@@ -33,6 +33,6 @@ router.get("/", function (req, res) {
             }
         })
     })
-})
+});
 
 module.exports = router;
