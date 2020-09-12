@@ -1,24 +1,27 @@
-  
-.jumbotron {
-    background-image: url("../img/fiveguys.png");
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+body {
+    background-image: url("../img/Fiveguys.jpg");
     background-repeat: no-repeat;
-    background-position: right;
-    background-color: #000000;
-    color: #ffffff;
-    margin-top: 3%;
+    
+    background-position: top;
+    background-position-x: right;
+   
+    
   }
-  #newburger {
-    color: #5c5c5c;
+  .container {
+    color: #d32424;
   }
-  #leftside {
-    background-color: #5c5c5c;
-    color: white;
-    text-align: center;
-    font-size: 1.3em;
-  }
-  #rightside {
-    background-color: #e49322;
-    color: white;
-    text-align: center;
-    font-size: 1.3em;
-  }
+ 
+  
