@@ -15,10 +15,10 @@ Node-Express-Handlebar-MySQL app
 
 ### Usage:   (alternately: Enter 'server.js' to initiate app if you are running locally from the command line.)
 
-<img src="https://github.com/soverylarry/EatDaBurger/blob/master/public/assets/img/LLBridgeReduced.png">
+<img src="https://github.com/soverylarry/EatDaBurger/blob/master/public/assets/img/snapShotFiveGuys.PNG">
 
 ### Licenses: MIT
 ### Contributors:         Developer, tutor and TA.
 ### Testing Requirements: None
-<img alt="D'oh!" src="/LLBridgeReduced.png">
+<img alt="D'oh!" src="https://github.com/soverylarry/EatDaBurger/blob/master/public/assets/img/LLBridgeReduced.png">
 ### To email developer: soverylarry@gmail.com
